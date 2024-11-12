@@ -1,0 +1,21 @@
+{
+  "name": "chess-timer",
+  "version": "0.0.1",
+  "private": true,
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "VITE_API_URL=http://localhost:3033 vite",
+    "build": "tsc && VITE_API_URL=https://api.smudge.ai vite build && rm -rf dist/.vite && zip -r dist dist"
+  },
+  "devDependencies": {
+    "@types/bun": "1.1.13"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.28",
+    "vite": "5.4.11"
+  }
+}
