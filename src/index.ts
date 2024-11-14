@@ -67,14 +67,10 @@ function updateClocks({
 
   // times will be formatted `10:01` or `0:10.1` if running low
   timerA.textContent = timeA;
-  if (timeA.includes('.')) {
-    timerA.style.color = '#fb7185';
-  }
+  timerA.style.color = timeA.includes('.') ? '#fb7185' : '#fff';
 
   timerB.textContent = timeB;
-  if (timeB.includes('.')) {
-    timerB.style.color = '#fb7185';
-  }
+  timerB.style.color = timeB.includes('.') ? '#fb7185' : '#fff';
 }
 
 async function main() {
